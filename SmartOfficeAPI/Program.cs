@@ -112,6 +112,20 @@ using (var scope = app.Services.CreateScope())
         db.SaveChanges();
     }
 
+    // Seed demo employee account if none exists
+    if (!db.Users.Any(u => u.Role == "Employee"))
+    {
+        db.Users.Add(new User
+        {
+            Name         = "Demo Employee",
+            Email        = "employee@smartoffice.com",
+            PasswordHash = BCrypt.Net.BCrypt.HashPassword("Employee@123"),
+            Role         = "Employee",
+            CreatedAt    = DateTime.UtcNow
+        });
+        db.SaveChanges();
+    }
+
     // Seed sample resources if the table is empty
     if (!db.Resources.Any())
     {

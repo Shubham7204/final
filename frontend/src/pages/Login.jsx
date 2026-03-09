@@ -84,9 +84,24 @@ export default function Login() {
             <Link to="/register" className="text-indigo-600 hover:underline font-medium">Register</Link>
           </p>
 
-          <div className="mt-5 p-3 bg-indigo-50 rounded-xl text-xs text-gray-600 border border-indigo-100">
-            <p className="font-semibold text-indigo-700 mb-1 flex items-center gap-1"><KeyRound size={12} /> Demo Credentials</p>
-            <p><span className="font-medium">Admin:</span> admin@smartoffice.com / Admin@123</p>
+          <div className="mt-5 p-3 bg-indigo-50 rounded-xl text-xs text-gray-600 border border-indigo-100 space-y-2">
+            <p className="font-semibold text-indigo-700 flex items-center gap-1 mb-2"><KeyRound size={12} /> Demo Credentials — click to fill</p>
+            <button
+              type="button"
+              onClick={() => setForm({ email: 'admin@smartoffice.com', password: 'Admin@123' })}
+              className="w-full text-left px-3 py-2 bg-white rounded-lg border border-indigo-100 hover:border-indigo-400 hover:bg-indigo-50 transition-colors"
+            >
+              <span className="font-semibold text-purple-700">Admin</span>
+              <span className="ml-2 text-gray-500">admin@smartoffice.com / Admin@123</span>
+            </button>
+            <button
+              type="button"
+              onClick={() => setForm({ email: 'employee@smartoffice.com', password: 'Employee@123' })}
+              className="w-full text-left px-3 py-2 bg-white rounded-lg border border-indigo-100 hover:border-indigo-400 hover:bg-indigo-50 transition-colors"
+            >
+              <span className="font-semibold text-indigo-700">Employee</span>
+              <span className="ml-2 text-gray-500">employee@smartoffice.com / Employee@123</span>
+            </button>
           </div>
         </div>
       </div>
