@@ -1,0 +1,65 @@
+## .NET / ASP.NET Core
+
+# Build output
+bin/
+obj/
+
+# NuGet packages
+*.nupkg
+*.snupkg
+.nuget/
+packages/
+
+# Visual Studio
+.vs/
+*.sln
+*.user
+*.suo
+*.userosscache
+*.sln.docview
+
+# Rider / JetBrains
+.idea/
+*.sln.iml
+
+# VS Code
+.vscode/
+
+# Test results
+TestResults/
+*.trx
+coverage/
+*.coverage
+*.coveragexml
+
+# Publish output
+publish/
+out/
+
+## SQLite database — contains real data, never commit
+*.db
+*.db-shm
+*.db-wal
+
+## Secrets & config overrides
+appsettings.Production.json
+appsettings.Staging.json
+secrets.json
+.env
+.env.*
+
+# User-specific appsettings overrides (keep appsettings.json and appsettings.Development.json)
+# Uncomment the line below if you don't want Development settings in source control either:
+# appsettings.Development.json
+
+## EF Core migrations snapshot (keep Migrations/ folder but ignore these)
+# *.cs  ← don't ignore, migrations are C# files
+
+## OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+## Logs
+*.log
+logs/

@@ -1,0 +1,6 @@
+@SmartOfficeAPI_HostAddress = http://localhost:5105
+
+GET {{SmartOfficeAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

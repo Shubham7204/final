@@ -1,0 +1,32 @@
+## ── Visual Studio Solution files ─────────────────────────────────────────────
+*.sln
+.vs/
+
+## ── .NET / ASP.NET Core (SmartOfficeAPI) ─────────────────────────────────────
+SmartOfficeAPI/bin/
+SmartOfficeAPI/obj/
+SmartOfficeAPI/*.db
+SmartOfficeAPI/*.db-shm
+SmartOfficeAPI/*.db-wal
+SmartOfficeAPI/appsettings.Production.json
+SmartOfficeAPI/appsettings.Staging.json
+SmartOfficeAPI/secrets.json
+SmartOfficeAPI/publish/
+SmartOfficeAPI/out/
+SmartOfficeAPI/logs/
+SmartOfficeAPI/*.log
+SmartOfficeAPI/*.nupkg
+SmartOfficeAPI/*.snupkg
+
+## ── Node / React / Vite (frontend) ───────────────────────────────────────────
+frontend/node_modules/
+frontend/dist/
+frontend/.env
+frontend/.env.*
+frontend/.env.local
+frontend/.env.production
+
+## ── OS files ─────────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
